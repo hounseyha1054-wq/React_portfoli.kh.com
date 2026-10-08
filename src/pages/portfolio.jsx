@@ -85,7 +85,7 @@ function Portfolio() {
       category: "Education • Web App",
       description: "A smart platform to help students navigate their academic journey — course planning, career advice, and resource discovery all in one place.",
       image: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=800&q=80",
-      tech: ["React", "Tailwind CSS", "Node.js", "MongoDB"],
+      tech: ["Python", "Tailwind CSS", "Flask", "Sqlite"],
       link: "https://github.com/hounseyha1054-wq/StudentGuidance.com"
     },
     {
