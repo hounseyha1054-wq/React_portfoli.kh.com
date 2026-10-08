@@ -56,9 +56,9 @@ function Portfolio() {
       id: 5,
       title: "E-comerce App",
       category: "App buying",
-      description: "completed app for buying .",
+      description: "completed app for buying  clean ui.",
       image: "https://png.pngtree.com/png-clipart/20250514/original/pngtree-boy-holding-shopping-bags-with-excitement-png-image_20967903.png",
-      tech: ["React", "Express", "MongoDB", "Socket.io"],
+      tech: ["Dart","Flutter"],
       link: "https://github.com/hounseyha1054-wq/ecomerceapp.com"
     },
     {
