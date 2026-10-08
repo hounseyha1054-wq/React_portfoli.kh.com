@@ -1,12 +1,19 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 function ContactMe() {
+
+  const [sent, setSent] = useState(false);
 
   useEffect(() => {
     AOS.init({ duration: 1000, once: true });
   }, []);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setSent(true);
+  };
 
   return (
     <div className="bg-zinc-950 text-white min-h-screen py-20 px-6">
@@ -39,32 +46,41 @@ function ContactMe() {
           </div>
 
           {/* Form */}
-          <form className="space-y-6" data-aos="fade-left">
+          <form className="space-y-6" data-aos="fade-left" onSubmit={handleSubmit}>
             
             <input
               type="text"
               placeholder="Your Name"
+              required
               className="w-full p-4 rounded-lg bg-white/5 border border-white/10 focus:outline-none focus:border-blue-500"
             />
 
             <input
               type="email"
               placeholder="Your Email"
+              required
               className="w-full p-4 rounded-lg bg-white/5 border border-white/10 focus:outline-none focus:border-blue-500"
             />
 
             <textarea
               rows="5"
               placeholder="Your Message"
+              required
               className="w-full p-4 rounded-lg bg-white/5 border border-white/10 focus:outline-none focus:border-blue-500"
             ></textarea>
 
-            <button
-              type="submit"
-              className="w-full py-4 bg-blue-600 rounded-lg hover:bg-blue-700 transition"
-            >
-              Send Message
-            </button>
+            {sent ? (
+              <div className="w-full py-4 bg-emerald-600 rounded-lg text-center font-semibold text-white">
+                ✅ Message sent! I'll get back to you soon.
+              </div>
+            ) : (
+              <button
+                type="submit"
+                className="w-full py-4 bg-blue-600 rounded-lg hover:bg-blue-700 transition font-semibold"
+              >
+                Send Message
+              </button>
+            )}
 
           </form>
 

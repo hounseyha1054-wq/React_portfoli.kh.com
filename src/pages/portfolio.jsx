@@ -1,5 +1,6 @@
 // pages/Portfolio.jsx
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -181,12 +182,12 @@ function Portfolio() {
           <p className="text-2xl text-zinc-400 mb-10">
             Let's work together and create something extraordinary.
           </p>
-          <a
-            href="/contactme"
+          <Link
+            to="/contactme"
             className="inline-block px-12 py-5 bg-white text-zinc-950 font-semibold text-xl rounded-full hover:bg-zinc-100 active:scale-95 transition-all"
           >
             Let's Talk
-          </a>
+          </Link>
         </div>
       </div>
     </div>

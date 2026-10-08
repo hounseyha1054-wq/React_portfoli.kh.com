@@ -1,5 +1,6 @@
 // pages/Home.jsx
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import profileImg from "../assets/admin.jpg";
@@ -38,9 +39,9 @@ function Home() {
               </p>
 
               <div data-aos="fade-up" data-aos-delay="400" className="flex flex-wrap gap-4 pt-6">
-                <a href="/portfolio" className="px-8 py-4 bg-white text-zinc-950 font-semibold rounded-full hover:bg-zinc-100 transition-all active:scale-95 text-lg">
+                <Link to="/portfolio" className="px-8 py-4 bg-white text-zinc-950 font-semibold rounded-full hover:bg-zinc-100 transition-all active:scale-95 text-lg">
                   View My Work
-                </a>
+                </Link>
                 <a href="https://www.canva.com/design/DAHLffEaN_k/78TUUStPioLtDbfO1ctN4Q/edit" target="_blank" rel="noopener noreferrer" className="px-8 py-4 border border-white/30 hover:border-white/60 font-semibold rounded-full transition-all text-lg">
                   Download CV
                 </a>
@@ -273,9 +274,9 @@ function Home() {
           <h2 className="text-6xl font-bold tracking-tight mb-6">Let's create something amazing together</h2>
           <p className="text-2xl text-zinc-400 mb-10">I'm currently open for new opportunities and collaborations.</p>
           
-          <a href="/aboutme" className="px-12 py-5 bg-white text-zinc-950 font-semibold text-xl rounded-full hover:bg-zinc-100 active:scale-95 transition-all">
+          <Link to="/aboutme" className="px-12 py-5 bg-white text-zinc-950 font-semibold text-xl rounded-full hover:bg-zinc-100 active:scale-95 transition-all">
             Hire Me Now
-          </a>
+          </Link>
         </div>
       </section>
 

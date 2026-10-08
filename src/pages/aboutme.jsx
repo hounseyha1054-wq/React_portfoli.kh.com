@@ -1,6 +1,7 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 import profileImg from "../assets/admin.jpg";
 
 function AboutMe() {
@@ -100,9 +101,9 @@ function AboutMe() {
               </div>
             </div>
 
-             <a href="/contactme" className="mt-4 px-6 py-3 bg-blue-600 rounded-full hover:bg-blue-700 transition">
+             <Link to="/contactme" className="mt-4 inline-block px-6 py-3 bg-blue-600 rounded-full hover:bg-blue-700 transition">
               Contact Me
-            </a>
+            </Link>
           </div>
 
         </div>
