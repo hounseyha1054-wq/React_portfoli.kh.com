@@ -2,6 +2,7 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import profileImg from "../assets/admin.jpg";
 
 function Home() {
 
@@ -40,15 +41,15 @@ function Home() {
                 <a href="/portfolio" className="px-8 py-4 bg-white text-zinc-950 font-semibold rounded-full hover:bg-zinc-100 transition-all active:scale-95 text-lg">
                   View My Work
                 </a>
-                <button className="px-8 py-4 border border-white/30 hover:border-white/60 font-semibold rounded-full transition-all text-lg">
+                <a href="https://www.canva.com/design/DAHLffEaN_k/78TUUStPioLtDbfO1ctN4Q/edit" target="_blank" rel="noopener noreferrer" className="px-8 py-4 border border-white/30 hover:border-white/60 font-semibold rounded-full transition-all text-lg">
                   Download CV
-                </button>
+                </a>
               </div>
 
               <div data-aos="fade-up" data-aos-delay="500" className="flex gap-6 pt-8">
                 <a href="#" className="text-zinc-400 hover:text-white transition-colors">Twitter</a>
-                <a href="#" className="text-zinc-400 hover:text-white transition-colors">Instagram</a>
-                <a href="#" className="text-zinc-400 hover:text-white transition-colors">LinkedIn</a>
+                <a href="https://www.instagram.com/suzey.ha?rpxt=dzMxOWZwbng0MXEw&utm_source=qr" className="text-zinc-400 hover:text-white transition-colors">Instagram</a>
+                <a href="https://www.linkedin.com/in/houn-seyha-28712637b/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BWAj8viBpSwSIeJn7sFLXLw%3D%3D" className="text-zinc-400 hover:text-white transition-colors">LinkedIn</a>
                 <a href="https://github.com/hounseyha1054-wq" className="text-zinc-400 hover:text-white transition-colors">GitHub</a>
               </div>
             </div>
@@ -57,7 +58,7 @@ function Home() {
               <div className="relative w-full max-w-md">
                 <div data-aos="zoom-in" data-aos-delay="400" className="aspect-square rounded-3xl overflow-hidden border-8 border-zinc-900 shadow-2xl">
                   <img 
-                    src="https://scontent.fpnh2-3.fna.fbcdn.net/v/t39.30808-6/639922968_1452403366556496_2077576067980808105_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=53a332&_nc_eui2=AeFQdtdLEF93wkh8NvSv-o0eH4ehN3jPxdQfh6E3eM_F1MWe9DZpiBRCpKbcrmPGgZ7GWBFvZU1vGdaYVv4fQeMt&_nc_ohc=T_-tGU6Ub0oQ7kNvwF_Sh4g&_nc_oc=AdrfjIS-Wzm3miccRmLLCRVr1ZKiCoHBuMb8fP9HXkVaJjMyfnY98WCnbcc_pbEe_5E&_nc_zt=23&_nc_ht=scontent.fpnh2-3.fna&_nc_gid=tubw4KgQJYHCPqDAWrBxBA&_nc_ss=7a3a8&oh=00_Af1674vZCFGyxdXdh06752OkP9Xex6cbc6k2bhr5m-_hsQ&oe=69DAF982" 
+                    src={profileImg}
                     alt="SEyha"
                     className="w-full h-full object-cover"
                   />
@@ -142,25 +143,97 @@ function Home() {
       {/* ==================== SKILLS SECTION ==================== */}
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 data-aos="fade-up" className="text-5xl font-bold text-center mb-16">Skills & Technologies</h2>
+          <h2 data-aos="fade-up" className="text-5xl font-bold text-center mb-4">Skills & Technologies</h2>
+          <p data-aos="fade-up" data-aos-delay="100" className="text-zinc-400 text-center text-xl mb-16">A full overview of what I bring to the table</p>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {["React", "Tailwind CSS", "JavaScript", "Php", "Node.js", "Figma", "Dart", "Python"].map((skill, i) => (
-              <div 
-                key={i}
-                data-aos="zoom-in" 
-                data-aos-delay={i * 80}
-                className="bg-zinc-900 border border-white/10 rounded-2xl p-8 text-center hover:border-white/30 transition-all"
-              >
-                <p className="font-semibold text-xl">{skill}</p>
+          <div className="space-y-10">
+
+            {/* Office Tools */}
+            <div data-aos="fade-up" data-aos-delay="100">
+              <h3 className="text-sm font-semibold uppercase tracking-widest text-violet-400 mb-4">Office Tools</h3>
+              <div className="flex flex-wrap gap-3">
+                {["Microsoft Word", "Excel", "PowerPoint"].map((skill, i) => (
+                  <span key={i} className="bg-zinc-900 border border-white/10 rounded-full px-5 py-2 text-sm font-medium hover:border-violet-500/50 transition-all">{skill}</span>
+                ))}
               </div>
-            ))}
+            </div>
+
+            {/* Programming Languages */}
+            <div data-aos="fade-up" data-aos-delay="150">
+              <h3 className="text-sm font-semibold uppercase tracking-widest text-violet-400 mb-4">Programming Languages</h3>
+              <div className="flex flex-wrap gap-3">
+                {["C", "C++", "Dart", "JavaScript", "Python", "PHP"].map((skill, i) => (
+                  <span key={i} className="bg-zinc-900 border border-white/10 rounded-full px-5 py-2 text-sm font-medium hover:border-violet-500/50 transition-all">{skill}</span>
+                ))}
+              </div>
+            </div>
+
+            {/* Web & Frameworks */}
+            <div data-aos="fade-up" data-aos-delay="200">
+              <h3 className="text-sm font-semibold uppercase tracking-widest text-violet-400 mb-4">Web & Frameworks</h3>
+              <div className="flex flex-wrap gap-3">
+                {["HTML5", "CSS3", "Node.js", "Express.js", "React.js", "Vue.js", "Laravel"].map((skill, i) => (
+                  <span key={i} className="bg-zinc-900 border border-white/10 rounded-full px-5 py-2 text-sm font-medium hover:border-violet-500/50 transition-all">{skill}</span>
+                ))}
+              </div>
+            </div>
+
+            {/* Mobile & API */}
+            <div data-aos="fade-up" data-aos-delay="250">
+              <h3 className="text-sm font-semibold uppercase tracking-widest text-violet-400 mb-4">Mobile & API</h3>
+              <div className="flex flex-wrap gap-3">
+                {["Flutter (Android & iOS)", "REST API Integration"].map((skill, i) => (
+                  <span key={i} className="bg-zinc-900 border border-white/10 rounded-full px-5 py-2 text-sm font-medium hover:border-violet-500/50 transition-all">{skill}</span>
+                ))}
+              </div>
+            </div>
+
+            {/* Databases */}
+            <div data-aos="fade-up" data-aos-delay="300">
+              <h3 className="text-sm font-semibold uppercase tracking-widest text-violet-400 mb-4">Databases</h3>
+              <div className="flex flex-wrap gap-3">
+                {["Oracle", "MS SQL Server", "MongoDB", "MS Access", "MySQL"].map((skill, i) => (
+                  <span key={i} className="bg-zinc-900 border border-white/10 rounded-full px-5 py-2 text-sm font-medium hover:border-violet-500/50 transition-all">{skill}</span>
+                ))}
+              </div>
+            </div>
+
+            {/* Tools & Dev Environment */}
+            <div data-aos="fade-up" data-aos-delay="350">
+              <h3 className="text-sm font-semibold uppercase tracking-widest text-violet-400 mb-4">Tools & Dev Environment</h3>
+              <div className="flex flex-wrap gap-3">
+                {["Git & GitHub", "Postman", "VS Code", "Android Studio"].map((skill, i) => (
+                  <span key={i} className="bg-zinc-900 border border-white/10 rounded-full px-5 py-2 text-sm font-medium hover:border-violet-500/50 transition-all">{skill}</span>
+                ))}
+              </div>
+            </div>
+
+            {/* AI */}
+            <div data-aos="fade-up" data-aos-delay="400">
+              <h3 className="text-sm font-semibold uppercase tracking-widest text-violet-400 mb-4">AI & Emerging Tech</h3>
+              <div className="flex flex-wrap gap-3">
+                {["AI Tools & Generative AI", "AI-Assisted Software Development"].map((skill, i) => (
+                  <span key={i} className="bg-zinc-900 border border-white/10 rounded-full px-5 py-2 text-sm font-medium hover:border-violet-500/50 transition-all">{skill}</span>
+                ))}
+              </div>
+            </div>
+
+            {/* Soft Skills */}
+            <div data-aos="fade-up" data-aos-delay="450">
+              <h3 className="text-sm font-semibold uppercase tracking-widest text-violet-400 mb-4">Soft Skills</h3>
+              <div className="flex flex-wrap gap-3">
+                {["Project Management", "Public Relations", "Teamwork", "Time Management", "Leadership", "Effective Communication", "Critical Thinking", "Digital Marketing"].map((skill, i) => (
+                  <span key={i} className="bg-zinc-900 border border-white/10 rounded-full px-5 py-2 text-sm font-medium hover:border-violet-500/50 transition-all">{skill}</span>
+                ))}
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
 
       {/* ==================== FEATURED PORTFOLIO ==================== */}
-      <section className="py-24 bg-zinc-900">
+      {/* <section className="py-24 bg-zinc-900">
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex justify-between items-end mb-12">
             <div>
@@ -194,7 +267,7 @@ function Home() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
       <section className="py-32 border-t border-white/10">
         <div className="max-w-4xl mx-auto text-center px-6" data-aos="fade-up">
           <h2 className="text-6xl font-bold tracking-tight mb-6">Let's create something amazing together</h2>

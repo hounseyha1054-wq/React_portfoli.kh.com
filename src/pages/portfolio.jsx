@@ -22,52 +22,79 @@ function Portfolio() {
       description: "Modern Ui with  Kidstar.",
       image: "https://www.shutterstock.com/shutterstock/photos/1051641830/display_1500/stock-vector-kidstar-logo-icon-1051641830.jpg",
       tech: ["Vue", "Tailwind","Javascript"],
-      link: "#"
+      link: "https://github.com/hounseyha1054-wq"
     },
     {
       id: 2,
-      title: "SaaS Dashboard",
-      category: "Dashboard • Web App",
-      description: "Powerful analytics dashboard for business intelligence.",
-      image: "https://picsum.photos/id/106/800/600",
-      tech: ["Next.js", "TypeScript", "Recharts", "Supabase"],
-      link: "#"
+      title: "Shopping App ",
+      category: " Web App",
+      description: "the app easy to find category for buy",
+      image: "https://play-lh.googleusercontent.com/fAR-Iqvi4r9w2ek4WfReosm7rI1fGxDLzaflcHSl85Ymg5WdmCFaeFyj5h3xyHBu9nS9",
+      tech: ["Dart,flutter "],
+      link: "https://github.com/hounseyha1054-wq"
     },
     {
       id: 3,
-      title: "Brand Identity Website",
-      category: "Branding • Landing Page",
+      title: "Instagram Clone",
+      category: "web App",
       description: "Elegant portfolio website for a luxury fashion brand.",
-      image: "https://picsum.photos/id/201/800/600",
-      tech: ["React", "Framer Motion", "Tailwind"],
-      link: "#"
+      image: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=800&q=80",
+      tech: ["dart,flutter framework"],
+      link: "https://github.com/hounseyha1054-wq/InstagramApp.com"
     },
     {
       id: 4,
-      title: "Back-end",
+      title: "Admin Panel System",
       category: "Hotel Management System",
       description: "Clean and Profesional UI",
       image: "https://thumbs.dreamstime.com/b/hotel-icon-creative-element-design-tourism-icons-collection-pixel-perfect-web-apps-software-print-usage-152846189.jpg",
       tech: ["C#"],
-      link: "#"
+      link: "https://github.com/hounseyha1054-wq/HoltelSystem.kh.com"
     },
     {
       id: 5,
-      title: "Restaurant Booking System",
-      category: "Full Stack • Booking",
-      description: "Real-time table reservation platform with payment integration.",
-      image: "https://picsum.photos/id/292/800/600",
+      title: "E-comerce App",
+      category: "App buying",
+      description: "completed app for buying .",
+      image: "https://png.pngtree.com/png-clipart/20250514/original/pngtree-boy-holding-shopping-bags-with-excitement-png-image_20967903.png",
       tech: ["React", "Express", "MongoDB", "Socket.io"],
-      link: "#"
+      link: "https://github.com/hounseyha1054-wq/ecomerceapp.com"
     },
     {
       id: 6,
-      title: "AI Productivity Tool",
-      category: "AI • SaaS",
-      description: "Smart task manager powered by artificial intelligence.",
-      image: "https://picsum.photos/id/367/800/600",
-      tech: ["Next.js", "OpenAI", "Tailwind", "Prisma"],
-      link: "#"
+      title: "Cafe App",
+      category: "Food & Beverage",
+      description: "Smart task to guidance .",
+      image: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=80",
+      tech: ["python", "Tailwind"],
+      link: "https://github.com/hounseyha1054-wq"
+    },
+    {
+      id: 7,
+      title: "Emerald Bistro",
+      category: "Web Development • Food & Drink",
+      description: "A full-featured website for a modern cafe selling food and drinks online. Includes a menu, ordering system, and elegant UI.",
+      image: "https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800&q=80",
+      tech: ["React", "Tailwind CSS", "Node.js"],
+      link: "https://github.com/hounseyha1054-wq/EmerRaldWebsit.com"
+    },
+    {
+      id: 8,
+      title: "Student Guidance",
+      category: "Education • Web App",
+      description: "A smart platform to help students navigate their academic journey — course planning, career advice, and resource discovery all in one place.",
+      image: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=800&q=80",
+      tech: ["React", "Tailwind CSS", "Node.js", "MongoDB"],
+      link: "https://github.com/hounseyha1054-wq/StudentGuidance.com"
+    },
+    {
+      id: 9,
+      title: "Movie App",
+      category: "Mobile App • Entertainment",
+      description: "A sleek mobile app to browse, search, and discover movies. Features trending films, detailed info, ratings, and a personal watchlist.",
+      image: "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=800&q=80",
+      tech: ["Flutter", "Dart", "REST API"],
+      link: "https://github.com/hounseyha1054-wq/Movie_App.kh.com"
     },
   ];
 
