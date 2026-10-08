@@ -67,7 +67,7 @@ function Portfolio() {
       category: "Food & Beverage",
       description: "Smart task to guidance .",
       image: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=80",
-      tech: ["python", "Tailwind"],
+      tech: ["Flutter", "Laravel"],
       link: "https://github.com/hounseyha1054-wq"
     },
     {
